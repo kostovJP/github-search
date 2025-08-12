@@ -16,7 +16,7 @@ export default function SearchForm({updateData,}){
 
     return (
         <form action="/" 
-            className={`border-none p-2 w-75 md:w-120 justify-self-center m-2 mt-3
+            className={`border-none p-2 w-85 md:w-120 justify-self-center m-2 mt-3
                     grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-0 bg-gray-200 rounded-l shadow-sm shadow-neutral-500
                 `}
             onSubmit={handleSubmit(formSubmission)}

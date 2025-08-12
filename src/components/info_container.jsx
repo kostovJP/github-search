@@ -15,15 +15,16 @@ const spanCss = "border-b-2 border-gray-300 m-2"
 export default function InfoContainer({ userData }) {
   return (
     <div
-      className={`border-none w-75 md:w-120 justify-self-center m-3 
+      className={`border-none w-85 md:w-120 justify-self-center m-3 
             bg-gray-200 rounded-lg grid grid-cols-1 shadow-md shadow-neutral-500`}
     >
       <section className="justify-items-center p-2 bg-blue-500 rounded-t-lg">
         <Avatar alt="Travis Howard" src={userData.avatar} 
-            sx={{width: 250,
-                height: 250,
+            sx={{width: 200,
+                height: 200,
                 border: "2px solid black",
-                boxShadow: "0 2px 10px darkblue"
+                boxShadow: "0 2px 10px darkblue",
+                margin: "5px",
             }}
         />
       </section>
