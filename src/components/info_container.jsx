@@ -32,12 +32,6 @@ export default function InfoContainer({ userData }) {
         <span className={spanCss}>Company: {userData.company ? userData.company : "not available"}</span>
         <span className={spanCss}>Followers: {userData.followers}</span>
         <span className={spanCss}>Following: {userData.following}</span>
-        <span className={spanCss}>Github page: <a href={userData.github_page}
-            className="text-purple-500 hover:underline"
-        >{userData.github_page}</a></span>
-        <span className={spanCss}>Github repos: <a href={userData.github_repos}
-            className="text-purple-500 hover:underline"
-        >{userData.github_repos}</a></span>
       </section>
     </div>
   );
