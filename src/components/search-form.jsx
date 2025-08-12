@@ -24,7 +24,7 @@ export default function SearchForm({updateData,}){
             <TextField id="standard-basic" label="github-username" variant="standard" 
                 {...register("username", {
                     required: {value: true, message: "*username cannot be empty"},
-                    maxLength: {value: 15, message: "*useranme cannot exceed 15 characters"},
+                    maxLength: {value: 25, message: "*useranme cannot exceed 15 characters"},
                     minLength: {value: 2, message: "*username must be atleast 2 characters long"},
                 })}
                 className='col-span-2'
