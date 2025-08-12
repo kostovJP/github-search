@@ -15,7 +15,7 @@ const spanCss = "border-b-2 border-gray-300 m-2"
 export default function InfoContainer({ userData }) {
   return (
     <div
-      className={`border-none w-75 md:w-100 justify-self-center m-3 
+      className={`border-none w-75 md:w-120 justify-self-center m-3 
             bg-gray-200 rounded-lg grid grid-cols-1 shadow-md shadow-neutral-500`}
     >
       <section className="justify-items-center p-2 bg-blue-500 rounded-t-lg">
