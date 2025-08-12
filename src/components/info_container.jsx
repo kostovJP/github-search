@@ -20,15 +20,15 @@ export default function InfoContainer({ userData }) {
     >
       <section className="justify-items-center p-2 bg-blue-500 rounded-t-lg">
         <Avatar alt="Travis Howard" src={userData.avatar} 
-            sx={{width: 100,
-                height: 100,
+            sx={{width: 250,
+                height: 250,
                 border: "2px solid black",
                 boxShadow: "0 2px 10px darkblue"
             }}
         />
       </section>
       <section className="grid grid-cols-1 gap-2 p-2">
-        <span className={spanCss}>Name: {userData.name}</span>
+        <span className={spanCss}>Name: {userData.name} </span>
         <span className={spanCss}>Company: {userData.company ? userData.company : "not available"}</span>
         <span className={spanCss}>Followers: {userData.followers}</span>
         <span className={spanCss}>Following: {userData.following}</span>
