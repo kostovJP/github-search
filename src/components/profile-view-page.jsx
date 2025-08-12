@@ -1,4 +1,5 @@
 import InfoContainer from "./info_container";
+import Navbar from "./navbar";
 import SearchForm from "./search-form";
 import { useState, useEffect } from "react";
 
@@ -49,6 +50,7 @@ export default function ProfileViewPage(){
 
     return (
         <main>
+            <Navbar/>
             <SearchForm updateData={fetchUname}/>
             <InfoContainer userData={userData}/>
         </main>
