@@ -4,7 +4,7 @@ import SearchForm from "./search-form";
 import { useState, useEffect } from "react";
 
 const base_url = "https://api.github.com/users";
-const github_key = import.meta.env.VITE_GITHUB_KEY;
+const github_key = import.meta.env.VITE_GITHUB_TOKEN;
 
 export default function ProfileViewPage(){
     const [username, setUsername] = useState({uname: "", isFetching: false});
