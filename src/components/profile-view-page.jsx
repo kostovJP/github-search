@@ -45,6 +45,7 @@ export default function ProfileViewPage(){
                 }
             })
         }   
+        if(!username.uname){ return }
         fetchData();
     }, [username]);
 
@@ -52,7 +53,7 @@ export default function ProfileViewPage(){
         <main>
             <Navbar/>
             <SearchForm updateData={fetchUname}/>
-            <InfoContainer userData={userData}/>
+            {username.uname && <InfoContainer userData={userData}/>}
         </main>
     )
 }

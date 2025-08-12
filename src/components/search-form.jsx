@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button';
 
-export default function SearchForm({updateData}){
+export default function SearchForm({updateData,}){
     const {
         register,
         handleSubmit,
@@ -30,10 +30,11 @@ export default function SearchForm({updateData}){
                 className='col-span-2'
             />
             <span className='justify-self-center col-span-1 content-center'><Button variant="contained" type="submit"
-                diabled={isSubmitting}
+                disabled={isSubmitting}
             >search</Button></span>
             {errors.username && 
-                <p className='text-[12px] text-red-500 col-span-2 text-center border-none md:col-span-3'>{errors.username.message}</p>
+                <p className='text-[12px] text-red-500 col-span-2 text-center 
+                md:text-left border-none md:col-span-3'>{errors.username.message}</p>
             }
         </form>
     )
